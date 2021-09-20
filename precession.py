@@ -21,12 +21,12 @@ qp.append(QP(
     jnp.array([0., 0, 0]),
     jnp.array([0., 0, 0]),
 ))
-config.bodies.append(Box(1, [.3, 3, 3]))
+config.bodies.append(Box(1, [.05, 2, 2]))
 qp.append(QP(
     jnp.array([-0.5, 0, 1]),
     jnp.array([1., 0, 0, 0]),
     jnp.array([0, 0, 0]),
-    jnp.array([-3., 0, 0]),
+    jnp.array([-10., 0, 0]),
 ))
 
 config.joints.append(Joint ("ball", 0, 1, [0., 0, 0], [0.5, 0, 0], [1, 0, 0], 0))
